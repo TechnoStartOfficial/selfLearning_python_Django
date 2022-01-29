@@ -122,6 +122,5 @@ STATIC_URL = '/static/'
 #Added Static Files Directory Manually
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
+    os.path.join(BASE_DIR, "static"), #Base Directory Indicates PWD static is a folder inside it
 ]
