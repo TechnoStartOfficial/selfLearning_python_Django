@@ -9,8 +9,7 @@ def index(request):
     # return HttpResponse("This Is Homepage") Now Linking With Template
     return render(request,'index.htm', context)
 def about(request):
-    return HttpResponse("This Is About")
+    return render(request,'about.htm')
 def services(request):
-    return HttpResponse("This Is Services")
-def contacts(request):
-    return HttpResponse("This Is Contacts")
+    return render(request,'services.htm')
+
