@@ -15,6 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+# Customization Added To Change Admin Portal
+admin.site.site_header = "Techno Start's Official Update Portal"
+admin.site.site_title = "Admin's Portal"
+admin.site.index_title = "Welcome to Techno Start's Update Portal"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
